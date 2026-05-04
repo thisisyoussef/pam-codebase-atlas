@@ -117,7 +117,7 @@ OPENAI_API_KEY
 RAILWAY_API_TOKEN
 ```
 
-`RAILWAY_API_TOKEN` is an account/workspace token for GitHub Actions deployments. For least privilege, replace it later with environment-scoped Railway project tokens named `RAILWAY_TOKEN_STAGING` and `RAILWAY_TOKEN_PRODUCTION`; the workflows already support those names.
+`RAILWAY_API_TOKEN` is an account/workspace token for GitHub Actions deployments. For least privilege, replace it later with environment-scoped Railway project tokens and update the workflows to use `RAILWAY_TOKEN`.
 
 Repository variables:
 

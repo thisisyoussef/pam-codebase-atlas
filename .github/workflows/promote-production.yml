@@ -26,7 +26,6 @@ jobs:
       ONBOARDING_MD_PATH: content/onboarding.md
       REQUIRE_LLM: "1"
       RAILWAY_API_TOKEN: ${{ secrets.RAILWAY_API_TOKEN }}
-      RAILWAY_TOKEN: ${{ secrets.RAILWAY_TOKEN_PRODUCTION }}
       RAILWAY_PROJECT_ID: ${{ vars.RAILWAY_PROJECT_ID }}
       RAILWAY_SERVICE: ${{ vars.RAILWAY_SERVICE_NAME || 'pam-codebase-atlas' }}
       RAILWAY_ENVIRONMENT: production

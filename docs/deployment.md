@@ -37,7 +37,8 @@ RAILWAY_API_TOKEN
 ```
 
 `RAILWAY_API_TOKEN` is enough to run the current workflows. For least privilege,
-replace it with environment-scoped project tokens later:
+replace it later with environment-scoped project tokens and update the workflows
+to use `RAILWAY_TOKEN`:
 
 ```text
 RAILWAY_TOKEN_STAGING
