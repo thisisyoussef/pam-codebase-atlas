@@ -114,9 +114,10 @@ Repository secrets:
 
 ```text
 OPENAI_API_KEY
-RAILWAY_TOKEN_STAGING
-RAILWAY_TOKEN_PRODUCTION
+RAILWAY_API_TOKEN
 ```
+
+`RAILWAY_API_TOKEN` is an account/workspace token for GitHub Actions deployments. For least privilege, replace it later with environment-scoped Railway project tokens and update the workflows to use `RAILWAY_TOKEN`.
 
 Repository variables:
 
@@ -126,7 +127,7 @@ RAILWAY_PROJECT_ID=<railway project id>
 RAILWAY_SERVICE_NAME=pam-codebase-atlas
 ```
 
-The Railway tokens should be scoped narrowly. Use separate staging and production tokens when possible.
+Railway project tokens should be scoped narrowly when possible.
 
 ## Railway Setup
 
