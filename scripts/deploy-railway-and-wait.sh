@@ -6,7 +6,10 @@ if [[ -z "${RAILWAY_PROJECT_ID:-}" || -z "${RAILWAY_ENVIRONMENT:-}" || -z "${RAI
   exit 1
 fi
 
-railway link "$RAILWAY_PROJECT_ID" >/dev/null
+railway link \
+  --project "$RAILWAY_PROJECT_ID" \
+  --environment "$RAILWAY_ENVIRONMENT" \
+  --service "$RAILWAY_SERVICE" >/dev/null
 
 set +e
 railway up \
