@@ -1,0 +1,15 @@
+node_modules
+.git
+.env
+.env.*
+*.log
+README.md
+docs
+content
+scripts
+src
+package-lock.json
+package.json
+index.html
+tsconfig.json
+vite.config.ts

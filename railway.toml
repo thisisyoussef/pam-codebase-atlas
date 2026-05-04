@@ -1,9 +1,9 @@
 [build]
-builder = "RAILPACK"
-buildCommand = "npm ci && npm run build"
+builder = "DOCKERFILE"
+dockerfilePath = "Dockerfile"
 
 [deploy]
-startCommand = "npm run start"
+startCommand = "node server.mjs"
 healthcheckPath = "/healthz"
 healthcheckTimeout = 300
 restartPolicyType = "ON_FAILURE"

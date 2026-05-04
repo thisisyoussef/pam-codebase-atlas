@@ -54,4 +54,4 @@ jobs:
         run: npm install -g @railway/cli
 
       - name: Deploy to Railway production
-        run: railway up --ci --project "$RAILWAY_PROJECT_ID" --environment "$RAILWAY_ENVIRONMENT" --service "$RAILWAY_SERVICE"
+        run: railway up --ci --no-gitignore --project "$RAILWAY_PROJECT_ID" --environment "$RAILWAY_ENVIRONMENT" --service "$RAILWAY_SERVICE"
