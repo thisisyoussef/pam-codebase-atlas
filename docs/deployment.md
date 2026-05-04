@@ -33,6 +33,13 @@ Add repository secrets:
 
 ```text
 OPENAI_API_KEY
+RAILWAY_API_TOKEN
+```
+
+`RAILWAY_API_TOKEN` is enough to run the current workflows. For least privilege,
+replace it with environment-scoped project tokens later:
+
+```text
 RAILWAY_TOKEN_STAGING
 RAILWAY_TOKEN_PRODUCTION
 ```
